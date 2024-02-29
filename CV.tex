@@ -1,0 +1,148 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Beichen} % Your first name
+\familyname{Xu} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\address{44 Princes Gate}{London, UK, SW7 2QA}
+\mobile{+44 0741 091 5752}
+\email{xb223@ic.ac.uk}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{2020--2023}{B.Sc. Physics}{University of Birmingham}{School of Physics and Astronomy}{}{}
+\cventry{2023-2024}{MRes Machine Learning and Big Data in the Physical Sciences}{Imperial College London}{Department of Physics}{}{}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\subsection{Vocational}
+
+\cventry{2022}{Summer Intern}{\textsc{Kavli Institute of Cosmology Cambridge}}{Cambridge}{}{Learned some computing skills such as Linux, vim, TensorFlow.  Nested sampled the data of cosmological parameters using Bayesian inference and plotted 2D graphs, as well as GIFs of the artificial intelligence training process. Discussed with a PhD students, and pulled a request to a python package named "margarine" written by him to suggest adding another objective function on Github.
+\newline{}\newline{}
+Detailed achievements:
+\begin{itemize}
+    \item Investigated the machine learning-enhanced Bayesian inference.
+        \begin{itemize}
+            \item Used nested sampling to train the data from cosmology.
+            \item Used masked aggressive flow to generate the posterior of different parameters.
+        \end{itemize}
+    \item  Learned computing \& industry standard tools.
+        \begin{itemize}
+            \item Linux
+            \item \texttt{vim} \& \texttt{vimteractive}
+            \item \texttt{ssh}
+            \item \texttt{tmux}
+            \item tensorflow
+            \item tqdm
+        \end{itemize}
+    \item Studied state of the art python packages.
+        \begin{itemize}
+            \item margarine
+            \item anesthetic
+        \end{itemize}
+\end{itemize}}
+
+%------------------------------------------------
+
+\cventry{2021}{Summer Intern}{\textsc{Purple Mountain Observatory}}{Nanjing}{}{Followed the supervisor to do some data analysis on Gamma Ray Bursts, learned some useful computing skills, and communicated with other group members to find better ways to analyse fit data.
+\newline{}\newline{}
+Detailed achievements:
+\begin{itemize}
+    \item Investigated the causes and physical mechanisms behind the formation of Gamma Ray Bursts.
+    \item Did data analysis and fit on the data from Swift GRBs.
+    \item  Learned computing skills
+        \begin{itemize}
+            \item More proficient in Python
+            \item \texttt{iminuit}
+        \end{itemize}
+\end{itemize}}
+
+
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cvitem{2018}{18th Award Program for Future Scientists --  Second Prize}
+\cvitem{2019}{Physics Olympiad in Jiangsu Province, China -- First prize}
+
+%----------------------------------------------------------------------------------------
+%	COMPUTER SKILLS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Computer skills}
+
+\cvitem{Programming}{\textsc{Python}, \textsc{C++}, \textsc{Mathematica}}
+\cvitem{Computing}{\textsc{Unix}, \textsc{Bash}, zsh, vim, git, \LaTeX}
+\cvitem{OS}{Linux, Windows}
+
+%----------------------------------------------------------------------------------------
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\cvitemwithcomment{Chinese}{Mothertongue}{}
+\cvitemwithcomment{English}{Intermediate}{Conversationally fluent}
+
+%----------------------------------------------------------------------------------------
+
+\section{Publication}
+[1] Xu, Beichen, Jun Su, and Weiguo Wang. "An expanding balloon: a small universe." Physics Education 53.6 (2018): 065005.
+\end{document}
