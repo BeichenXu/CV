@@ -21,7 +21,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+% PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 \documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
@@ -29,13 +29,11 @@
 \moderncvstyle{classic} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 
-\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
-\usepackage[scale=0.75]{geometry} % Reduce document margins
-%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
-%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+\usepackage[scale=0.85]{geometry} % Reduce document margins
+\linespread{0.9}
 
 %----------------------------------------------------------------------------------------
-%	NAME AND CONTACT INFORMATION SECTION
+% NAME AND CONTACT INFORMATION SECTION
 %----------------------------------------------------------------------------------------
 
 \firstname{Beichen} % Your first name
@@ -50,99 +48,94 @@
 %----------------------------------------------------------------------------------------
 
 \begin{document}
-
 \makecvtitle % Print the CV title
 
 %----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
+% EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Education}
 
-\cventry{2020--2023}{B.Sc. Physics}{University of Birmingham}{School of Physics and Astronomy}{}{}
 \cventry{2023-2024}{MRes Machine Learning and Big Data in the Physical Sciences}{Imperial College London}{Department of Physics}{}{}
+\cventry{2020--2023}{B.Sc. Physics}{University of Birmingham}{School of Physics and Astronomy}{}{}
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE SECTION
+% WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Experience}
+\section{Work Experience}
 
-\subsection{Vocational}
+\subsection{Internships}
 
-\cventry{2022}{Summer Intern}{\textsc{Kavli Institute of Cosmology Cambridge}}{Cambridge}{}{Learned some computing skills such as Linux, vim, TensorFlow.  Nested sampled the data of cosmological parameters using Bayesian inference and plotted 2D graphs, as well as GIFs of the artificial intelligence training process. Discussed with a PhD students, and pulled a request to a python package named "margarine" written by him to suggest adding another objective function on Github.
-\newline{}\newline{}
-Detailed achievements:
+\cventry{2022}{Summer Intern}{\textsc{Kavli Institute of Cosmology Cambridge}}{Cambridge}{}{
 \begin{itemize}
-    \item Investigated the machine learning-enhanced Bayesian inference.
-        \begin{itemize}
-            \item Used nested sampling to train the data from cosmology.
-            \item Used masked aggressive flow to generate the posterior of different parameters.
-        \end{itemize}
-    \item  Learned computing \& industry standard tools.
-        \begin{itemize}
-            \item Linux
-            \item \texttt{vim} \& \texttt{vimteractive}
-            \item \texttt{ssh}
-            \item \texttt{tmux}
-            \item tensorflow
-            \item tqdm
-        \end{itemize}
-    \item Studied state of the art python packages.
-        \begin{itemize}
-            \item margarine
-            \item anesthetic
-        \end{itemize}
+    \item Investigated machine learning-enhanced Bayesian inference.
+    \item Used nested sampling to train cosmology data and masked aggressive flow to generate the posterior of different parameters.
+    \item Developed and trained machine learning models to enhance data analysis accuracy.
+    \item Created visualizations, including 2D plots and GIFs, to illustrate AI training processes.
+    \item Contributed to the "margarine" Python package on GitHub by adding a new objective function.
+    \item Gained proficiency in computing tools such as Linux, vim, vimteractive, ssh, tmux, tqdm, and TensorFlow, and studied Python packages like margarine and anesthetic.
 \end{itemize}}
 
 %------------------------------------------------
 
-\cventry{2021}{Summer Intern}{\textsc{Purple Mountain Observatory}}{Nanjing}{}{Followed the supervisor to do some data analysis on Gamma Ray Bursts, learned some useful computing skills, and communicated with other group members to find better ways to analyse fit data.
-\newline{}\newline{}
-Detailed achievements:
+\cventry{2021}{Summer Intern}{\textsc{Purple Mountain Observatory}}{Nanjing}{}{
 \begin{itemize}
-    \item Investigated the causes and physical mechanisms behind the formation of Gamma Ray Bursts.
-    \item Did data analysis and fit on the data from Swift GRBs.
-    \item  Learned computing skills
-        \begin{itemize}
-            \item More proficient in Python
-            \item \texttt{iminuit}
-        \end{itemize}
+    \item Analyzed Gamma Ray Burst (GRB) data to investigate their causes and mechanisms.
+    \item Utilized Python for data fitting and analysis, focusing on Swift GRB data.
+    \item Enhanced programming skills in Python and the iminuit library.
 \end{itemize}}
 
+%----------------------------------------------------------------------------------------
+% PROJECT EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
 
-%	AWARDS SECTION
+\section{Project Experience}
+
+\subsection{Academic}
+
+\cventry{2024}{MRes Project}{\textsc{Imperial College London}}{London}{}{
+\begin{itemize}
+    \item Created simulated multi-source gravitational wave time-series data.
+    \item Developed and trained WGAN models to analyze gravitational wave signals.
+    \item Utilized Imperial College London's HPC for training and performed data visualization.
+    \item Debugged neural networks to improve performance and accuracy.
+    \item Employed PyTorch, PyTorch Lightning, and GetDist for model development, training and analysis.
+\end{itemize}}
+
+%----------------------------------------------------------------------------------------
+% AWARDS SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Awards}
 
-\cvitem{2018}{18th Award Program for Future Scientists --  Second Prize}
+\cvitem{2018}{18th Award Program for Future Scientists -- Second Prize}
 \cvitem{2019}{Physics Olympiad in Jiangsu Province, China -- First prize}
 
 %----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS SECTION
+% COMPUTER SKILLS SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Computer skills}
+\section{Computer Skills}
 
-\cvitem{Programming}{\textsc{Python}, \textsc{C++}, \textsc{Mathematica}}
-\cvitem{Computing}{\textsc{Unix}, \textsc{Bash}, zsh, vim, git, \LaTeX}
+\cvitem{Programming}{Python, C++, Mathematica, PyTorch, TensorFlow, SQL, Lightning}
+\cvitem{Computing}{Unix, Bash, vim, git, \LaTeX, FPGA (VHDL/Verilog)}
 \cvitem{OS}{Linux, Windows}
 
 %----------------------------------------------------------------------------------------
 
-
 %----------------------------------------------------------------------------------------
-%	LANGUAGES SECTION
+% LANGUAGES SECTION
 %----------------------------------------------------------------------------------------
 
 \section{Languages}
 
-\cvitemwithcomment{Chinese}{Mothertongue}{}
-\cvitemwithcomment{English}{Intermediate}{Conversationally fluent}
+\cvitemwithcomment{Chinese}{Native}{}
+\cvitemwithcomment{English}{Intermediate}{Conversational fluency}
 
 %----------------------------------------------------------------------------------------
 
-\section{Publication}
-[1] Xu, Beichen, Jun Su, and Weiguo Wang. "An expanding balloon: a small universe." Physics Education 53.6 (2018): 065005.
+\section{Publications}
+\cvitem{1}{Xu, Beichen, Jun Su, and Weiguo Wang. "An expanding balloon: a small universe." \textit{Physics Education} 53.6 (2018): 065005.}
+
 \end{document}
